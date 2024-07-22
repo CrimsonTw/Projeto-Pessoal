@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+
+
+}
+
+@font-face {
+    font-family: ringbearer;
+    src: url(C:\Users\Pichau\Downloads\ringbearer.zip.ttf);
+}
+
+body {
+    color: #F2C166;
+    background-image: url(./imagens/Fundo\ Site\ Elden.jpg);
+    margin: 50px;
+    background-size: cover;
+    background-position-y: 90%;
+    background-attachment: fixed;
+    font-family: Ringbearer;
+    text-shadow: 12px 12px 55px black;
+}
+
+h2 {
+    text-align: justify;
+    font-size: 75px;
+}
+
+p {
+    font-size: 50px;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 2s;
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    transition: all 1.5s;
+    filter: blur(0);
+    transform: translateX(0%);
+}
+
+.logos {
+    display: flex;
+    gap: 20px;
+}
+
+.avatar {
+    height: 325px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 15px;
+    width: 295px;
+}
+
+.logos :nth-child(2) {
+    transition-delay: 400ms;
+}
+
+.logos :nth-child(3) {
+    transition-delay: 700ms;
+}
+
+.logos :nth-child(4) {
+    transition-delay: 1000ms;
+}
+
+.Godfrey {
+    height: 600px;
+    width: 600px;
+}
+
+.nav-bar {
+    display: flex;
+    padding: 1.5rem 6rem;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h4 {
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 15px;
+}
+
+.hidden.aquisição {
+    font-size: 14px;
+}
